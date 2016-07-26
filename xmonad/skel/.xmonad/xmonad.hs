@@ -6,7 +6,6 @@ import XMonad.Util.EZConfig(additionalKeys)
 import System.IO
 
 main = do
-    spawn "xrandr --output default --mode 2560x1440"
     xmproc <- spawnPipe "/usr/bin/xmobar /home/pair/.xmobarrc"
     xmonad $ defaultConfig
         { manageHook = manageDocks <+> manageHook defaultConfig
