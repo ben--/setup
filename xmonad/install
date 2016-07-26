@@ -1,0 +1,12 @@
+#!/bin/bash -eu
+
+sudo apt-get update
+sudo apt-get install \
+     libghc6-xmonad-contrib-dev \
+     libghc6-xmonad-dev \
+     suckless-tools \
+     trayer \
+     xmobar \
+     xmonad
+
+cp -a xmonad/skel/ ~/
